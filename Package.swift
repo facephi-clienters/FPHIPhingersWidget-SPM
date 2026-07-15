@@ -18,9 +18,11 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.7.5"),
+        .package(url: "https://github.com/facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.7.7"),
         .package(url: "https://github.com/facephi-clienters/FPHILicenseManager-SPM.git", .upToNextMajor(from: "0.5.6")),
-        .package(url: "https://github.com/facephi-clienters/FPHILicenseActivator-SPM.git", exact: "1.0.2")
+        .package(url: "https://github.com/facephi-clienters/FPHILicenseActivator-SPM.git", exact: "1.0.2"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", exact: "1.1.2301"),
+        .package(url: "https://github.com/facephi-clienters/OpenCV-SPM.git", exact: "4.6.0"),
     ],
     targets: [
         .target(
@@ -33,8 +35,8 @@ let package = Package(
                 .product(name: "FPHILicenseActivator-SPM", package: "FPHILicenseActivator-SPM"),
                 "FPHIPhingersWidgetResources-SPM",
                 "ncnn",
-                "OpenSSL",
-                "opencv2",
+                .product(name: "OpenSSL", package: "OpenSSL"),
+                .product(name: "OpenCV-SPM", package: "OpenCV-SPM"),
                 "T5AirSnapBridge",
             ]
         ),
@@ -51,28 +53,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "fphiphingers",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.4.11/FPHIPhingersWidget.zip",
-            checksum: "e91c2255e648abfa0464a5eb379a23d4b28389f7e3ca423a2234b8c970c753e6"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.4.12/FPHIPhingersWidget.zip",
+            checksum: "015f3828bc93f6ce321be89d937d9680880a7e330ff6ba9b247725b7c7f351ca"
         ),
         .binaryTarget(
             name: "T5AirSnapFramework",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.4.11/T5AirSnapFramework.zip",
-            checksum: "e5a6470c3b200205bddfad6df8fa83a91de87eb1f9a5322e641af2d1553f4fa5"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.4.12/T5AirSnapFramework.zip",
+            checksum: "8b3a7382336ee53515122729220ee4e3f9f10661a1587a34ff17684cbbb0dca9"
         ),
         .binaryTarget(
             name: "ncnn",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/ncnn/1.4.11/ncnn.zip",
-            checksum: "30d4d6e3aedd86a53be2d41eaac39e5bd9372a11adb548df8b7420d7e7d870eb"
-        ),
-        .binaryTarget(
-            name: "OpenSSL",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/OpenSSL/1.4.11/OpenSSL.zip",
-            checksum: "b9d13d8fd0dddbc5cc21b865e1299e9dac0dbc91826e35e059f544b8648a045b"
-        ),
-        .binaryTarget(
-            name: "opencv2",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/opencv2/1.4.11/opencv2.zip",
-            checksum: "05ad8a32a3a93e112b64b8100b3e134f9f52519a3ae94df1a4d1f404e1772672"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersTFFrameworks/ncnn/7.1.0/ncnn.zip",
+            checksum: "65614c21cdc015954045e593bfcd4e5919175c7b1a4e981ed7a93e32cf43e513"
         ),
     ]
 )
