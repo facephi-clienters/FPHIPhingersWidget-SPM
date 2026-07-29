@@ -18,7 +18,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.8.0"),
+        .package(url: "https://github.com/facephi-clienters/SDK-FPHIDesignSystemResources-SPM.git", exact: "2.8.3"),
         .package(url: "https://github.com/facephi-clienters/FPHILicenseManager-SPM.git", .upToNextMajor(from: "0.5.6")),
         .package(url: "https://github.com/facephi-clienters/FPHILicenseActivator-SPM.git", exact: "1.0.2"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", exact: "1.1.2301"),
@@ -53,13 +53,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "fphiphingers",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.5.0/FPHIPhingersWidget.zip",
-            checksum: "5dcdcc2fc5a873463768398dbe968f5eb035980d5a69a4d2e6c4ed2300b52b11"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.5.1/FPHIPhingersWidget.zip",
+            checksum: "22fa4f02fc31e506ce6ae1c91ce9396829ad0c34bdcda4f8868bc549dbd48a9f"
         ),
         .binaryTarget(
             name: "T5AirSnapFramework",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.5.0/T5AirSnapFramework.zip",
-            checksum: "e30bb7b18db4b6821d4941bbc973db8a2a4efab02528cd6f030bc00b02a98418"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.5.1/T5AirSnapFramework.zip",
+            checksum: "dfbaebb4252756d4a442ceaf30d13fb81eea504b3af3c5dfd035a73d9efb23f6"
         ),
         .binaryTarget(
             name: "ncnn",
