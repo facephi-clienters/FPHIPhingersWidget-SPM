@@ -53,13 +53,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "fphiphingers",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.5.1/FPHIPhingersWidget.zip",
-            checksum: "22fa4f02fc31e506ce6ae1c91ce9396829ad0c34bdcda4f8868bc549dbd48a9f"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/FPHIPhingersWidget/1.5.2/FPHIPhingersWidget.zip",
+            checksum: "8f63040ef81c1f016227aef90d30ba4c16751254a28989ef5952e4f1b7afe500"
         ),
         .binaryTarget(
             name: "T5AirSnapFramework",
-            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.5.1/T5AirSnapFramework.zip",
-            checksum: "dfbaebb4252756d4a442ceaf30d13fb81eea504b3af3c5dfd035a73d9efb23f6"
+            url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/T5AirSnapFramework/1.5.2/T5AirSnapFramework.zip",
+            checksum: "c28fc7edebe4f5f371effa63a83719162d76b4ac47b77d3385b4adad04014c3e"
         ),
         .binaryTarget(
             name: "ncnn",
